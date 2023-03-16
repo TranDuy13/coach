@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import { login, reset } from "../components/features/user/userSlice";
 
 function Login(){
-    const {user, isSuccess} = useSelector((state)=>state.user)
+    const {user, isSuccess,message} = useSelector((state)=>state.user)
     const navigate =useNavigate()
     useEffect(()=>{
         dispatch(reset())
